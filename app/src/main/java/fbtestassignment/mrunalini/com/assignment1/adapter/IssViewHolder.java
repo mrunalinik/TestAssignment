@@ -49,7 +49,7 @@ public class IssViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void populateItems(ResponseModel userDetailsModel, int position) {
-        duration.setText("Duration : "+userDetailsModel.getDuration());
+        duration.setText("Duration : "+userDetailsModel.getDuration() +" secs");
         Date date = new Date(userDetailsModel.getRisetime());
 
         String dateStr = convertDateToStr(date);
