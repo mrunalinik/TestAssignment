@@ -2,9 +2,7 @@ package fbtestassignment.mrunalini.com.assignment1.apinterface;
 
 
 import java.util.HashMap;
-import java.util.Map;
 
-import fbtestassignment.mrunalini.com.assignment1.MainActivity;
 import fbtestassignment.mrunalini.com.assignment1.models.ServiceResponse;
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -12,15 +10,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIRequestHandler {
 
-	APICommonInterface mInterfaces = createService();
 	private static final APIRequestHandler instance = new APIRequestHandler();
-
-	public static APIRequestHandler getInstance() {
-		return instance;
-	}
+	APICommonInterface mInterfaces = createService();
 
 	private APIRequestHandler() {
 
+	}
+
+	public static APIRequestHandler getInstance() {
+		return instance;
 	}
 
 	public static APICommonInterface createService() {

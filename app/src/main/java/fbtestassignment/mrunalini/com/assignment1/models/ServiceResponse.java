@@ -10,6 +10,7 @@ public class ServiceResponse {
 
     private String message;
     private RequestModel request;
+    private ArrayList<ResponseModel> response;
 
     public String getMessage() {
         return message;
@@ -34,7 +35,5 @@ public class ServiceResponse {
     public void setResponse(ArrayList<ResponseModel> response) {
         this.response = response;
     }
-
-    private ArrayList<ResponseModel> response;
 
 }

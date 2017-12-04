@@ -5,6 +5,9 @@ package fbtestassignment.mrunalini.com.assignment1.models;
  */
 
 public class ResponseModel {
+    private int duration;
+    private long risetime;
+
     public int getDuration() {
         return duration;
     }
@@ -20,7 +23,4 @@ public class ResponseModel {
     public void setRisetime(long risetime) {
         this.risetime = risetime;
     }
-
-    private int duration;
-    private long risetime;
 }
